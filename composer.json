@@ -1,5 +1,5 @@
 {
-    "name": "aliocza/sortable-ui-bundle",
+    "name": "akrz/sortable-ui-bundle",
     "type": "symfony-bundle",
     "description": "Provides a way to sort your admin listing",
     "keywords": ["sortable","admin","sonata", "drag"],
