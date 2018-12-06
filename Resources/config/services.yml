@@ -5,4 +5,4 @@ services:
         arguments:
             - "@doctrine.orm.entity_manager"
         calls:
-            - [ 'setPositionField', [%aliocza.sortable.ui.position.field%]]
+            - [ 'setPositionField', ["%aliocza.sortable.ui.position.field%"]]
