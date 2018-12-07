@@ -1,7 +1,7 @@
 services:
     aliocza_sortable_ui.position.orm:
         class: Aliocza\SortableUiBundle\Services\PositionORMHandler
-        public: false
+        public: true
         arguments:
             - "@doctrine.orm.entity_manager"
         calls:
