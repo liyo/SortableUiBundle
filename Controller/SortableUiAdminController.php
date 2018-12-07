@@ -28,7 +28,7 @@ class SortableUiAdminController extends CRUDController {
         
         if ($request->isMethod('POST')) {
 
-            $positionService = $this->get('aliocza_sortable_ui.position');
+            $positionService = $this->get('aliocza_sortable_ui.position.orm');
 
 
             $entity = $this->admin->getClass();
