@@ -19,8 +19,13 @@ class Configuration implements ConfigurationInterface
     {
         $supportedDrivers = array('orm');
 
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('aliocza_sortable_ui');
+        if (method_exists(TreeBuilder::class, 'getRootNode')) {
+            $treeBuilder = new TreeBuilder('aliocza_sortable_ui');
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            $treeBuilder = new TreeBuilder();
+            $rootNode = $treeBuilder->root('aliocza_sortable_ui');
+        }
 
         $rootNode
             ->children()
